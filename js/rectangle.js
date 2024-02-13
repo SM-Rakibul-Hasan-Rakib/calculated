@@ -1,0 +1,3 @@
+function calculateReactangleArea(){
+  console.log();
+}

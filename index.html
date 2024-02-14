@@ -18,7 +18,7 @@
 
     <main>
       <!-- main content container -->
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row space-y-7">
         <!-- shape card container -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <!--triangle card  -->
@@ -92,12 +92,17 @@
               </div>
               <div>
                 <p class="text-2xl">
-                  Area: <span id="rectangle-area"></span
-                  > <span>cm<sup>2</sup></span>
+                  Area: <span id="rectangle-area"></span>
+                  <span>cm<sup>2</sup></span>
                 </p>
               </div>
               <div class="card-actions justify-end">
-                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateRectangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -105,7 +110,7 @@
           <!--Parallelogram card  -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/parallelogram.png" alt="">
+              <img src="./images/parallelogram.png" alt="" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram!</h2>
@@ -126,16 +131,21 @@
                   name=""
                   id="Parallelogram-height"
                   placeholder="height"
-                /><span  class="ml-4">cm</span>
+                /><span class="ml-4">cm</span>
               </div>
               <div>
                 <p class="text-2xl">
-                  Area: <span id="parallelogram-area"></span
-                  > <span>cm<sup>2</sup></span>
+                  Area: <span id="parallelogram-area"></span>
+                  <span>cm<sup>2</sup></span>
                 </p>
               </div>
               <div class="card-actions justify-end">
-                <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -143,7 +153,7 @@
           <!--triangle card  -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/rhombus.png" alt="">
+              <img src="./images/rhombus.png" alt="" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
@@ -166,44 +176,71 @@
                   name=""
                   id="rhombus-two"
                   placeholder="d2"
-                /><span  class="ml-4">cm</span>
+                /><span class="ml-4">cm</span>
               </div>
               <div>
                 <p class="text-2xl">
-                  Area: <span id="parallelogram-area"></span
-                  > <span>cm<sup>2</sup></span>
+                  Area: <span id="rhombus-area"></span>
+                  <span>cm<sup>2</sup></span>
                 </p>
               </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
-          <!--triangle card  -->
+          
+          
+
+          <!--pentagon card  -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/pentagon.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title">pentagon!</h2>
+              <p>Area (A) = 0.5 X b X h</p>
+              <div class="">
+                <!-- pentagon base -->
+                <input
+                  class="border-2 border-gray-400 w-24 text-2xl p-2 rounded-sm"
+                  type="text"
+                  name=""
+                  id="pentagaon-base"
+                  placeholder="b"
+                /><span class="mr-4 ml-2">cm</span>
+                <!-- pentagon height -->
+                <input
+                  class="border-2 border-gray-400 w-24 text-2xl p-2 rounded-sm"
+                  type="text"
+                  name=""
+                  id="pentagon-height"
+                  placeholder="h"
+                /><span class="ml-4">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="pentagon-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
+
+
+
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-             <img src="./images/parallelogram.png" alt="">
+              <img src="./images/parallelogram.png" alt="" />
             </figure>
             <div class="card-body">
               <h2 class="card-title"></h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-primary ">Calculate</button>
               </div>
             </div>
           </div>
@@ -222,5 +259,6 @@
     <script src="./js/Parallelogram.js"></script>
     <script src="./js/rhombus.js"></script>
     <script src="./js/all.js"></script>
+    <script src="./js/pentagon.js"></script>
   </body>
 </html>

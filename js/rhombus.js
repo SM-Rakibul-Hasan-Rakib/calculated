@@ -10,4 +10,12 @@ function calculateRhombusArea(){
   const rhombusLetter = rhombusMulti.value;
   const d2 = parseFloat(rhombusLetter);
   console.log(d2);
+
+  //calculate Rhombus area
+  const area = 0.5 * rhombusBase * d2;
+  console.log('area of the parallelogram is:',area);
+
+  //Display RhombusSpan
+  const rhombusSpan = document.getElementById('rhombus-area');
+  rhombusSpan.innerText = area;
 }
